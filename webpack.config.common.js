@@ -21,6 +21,7 @@ module.exports = {
     new CopyPlugin({
         patterns: [
             { from: "public" },
+            { from: "src/assets" },
         ],
     }),
     new HtmlWebpackPlugin({
