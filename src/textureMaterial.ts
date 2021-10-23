@@ -5,7 +5,7 @@ import { Mesh } from "@babylonjs/core/Meshes/mesh"
 import { Scene } from "@babylonjs/core/scene"
 import { Vector3 } from "@babylonjs/core/Maths/math.vector"
 import { IDemo } from "./lib/IDemo"
-import { ArcRotateCamera, Color3, SceneLoader, StandardMaterial, Texture } from "@babylonjs/core"
+import { ArcRotateCamera, Color3, StandardMaterial, Texture } from "@babylonjs/core"
 
 export class TextureMaterial extends IDemo {
 

@@ -1,7 +1,7 @@
 {
   "name": "babylonjs-examples",
   "version": "1.0.0",
-  "description": "",
+  "description": "Examples: - [x] **Hello world**: create a simple scene with a cube and ground. Using a free camera to go through the scene. - [x] **Texture material**: Load and create a texture from the storage, then creating a material with this texture. - [ ] Load a model - [ ] Character animation",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.dev.js",
@@ -24,6 +24,15 @@
     "webpack-merge": "^5.7.3"
   },
   "dependencies": {
-    "@babylonjs/core": "^4.2.0"
-  }
+    "@babylonjs/core": "^4.2.0",
+    "@babylonjs/loaders": "^4.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daoshengmu/babylonjs-examples.git"
+  },
+  "bugs": {
+    "url": "https://github.com/daoshengmu/babylonjs-examples/issues"
+  },
+  "homepage": "https://github.com/daoshengmu/babylonjs-examples#readme"
 }

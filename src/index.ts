@@ -2,6 +2,7 @@
 import { Utils } from "./lib/utils";
 import { HelloWorld } from "./helloWorld";
 import { TextureMaterial } from "./textureMaterial";
+import { ModelScene } from "./modelScene";
 
 const canvas = document.getElementById("renderCanvas") as HTMLCanvasElement;
 Utils.assert(canvas);
@@ -19,7 +20,7 @@ scene1Btn.addEventListener('click', event => {
 
 document.body.appendChild(scene1Btn);
 
-// Scene - Sphere World
+// Scene - Texture material
 let scene2Btn = document.createElement('button');
 scene2Btn.textContent = "Texture material";
 
@@ -31,3 +32,16 @@ scene2Btn.addEventListener('click', event => {
 });
 
 document.body.appendChild(scene2Btn);
+
+// Scene - Model Scene
+let scene3Btn = document.createElement('button');
+scene3Btn.textContent = "Model scene";
+
+scene3Btn.addEventListener('click', event => {
+    canvas.style.display = "block";
+    let demo = new ModelScene(canvas);
+    demo.createScene();
+    demo.animate();
+});
+
+document.body.appendChild(scene3Btn);

@@ -1,21 +1,14 @@
 import { FreeCamera } from "@babylonjs/core/Cameras/freeCamera"
-import { Engine } from "@babylonjs/core/Engines/engine"
 import { HemisphericLight } from "@babylonjs/core/Lights/hemisphericLight"
 import { MeshBuilder } from "@babylonjs/core/Meshes/meshBuilder"
 import { Mesh } from "@babylonjs/core/Meshes/mesh"
 import { Scene } from "@babylonjs/core/scene"
-import { Vector3, Quaternion } from "@babylonjs/core/Maths/math.vector"
+import { Vector3 } from "@babylonjs/core/Maths/math.vector"
 import { StandardMaterial } from "@babylonjs/core/Materials/standardMaterial"
 import { Color3 } from "@babylonjs/core"
 import { IDemo } from "./lib/IDemo"
 
 export class HelloWorld extends IDemo {
-  
-  // constructor(canvas: HTMLCanvasElement) {
-  //   Utils.assert(canvas, "canvas can't be null.");
-  //   this.canvas_ = canvas;
-  //   this.engine_ = new Engine(canvas, true);
-  // }
 
   createScene(): void {
     this.scene_ = new Scene(this.engine_);
