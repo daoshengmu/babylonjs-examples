@@ -3,6 +3,7 @@ import { Utils } from "./lib/utils";
 import { HelloWorld } from "./helloWorld";
 import { TextureMaterial } from "./textureMaterial";
 import { ModelScene } from "./modelScene";
+import { CharacterAnim } from "./characterAnim";
 
 const canvas = document.getElementById("renderCanvas") as HTMLCanvasElement;
 Utils.assert(canvas);
@@ -45,3 +46,16 @@ scene3Btn.addEventListener('click', event => {
 });
 
 document.body.appendChild(scene3Btn);
+
+// Scene - Character Animation
+let scene4Btn = document.createElement('button');
+scene4Btn.textContent = "Character anim";
+
+scene4Btn.addEventListener('click', event => {
+    canvas.style.display = "block";
+    let demo = new CharacterAnim(canvas);
+    demo.createScene();
+    demo.animate();
+});
+
+document.body.appendChild(scene4Btn);

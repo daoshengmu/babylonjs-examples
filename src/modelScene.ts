@@ -16,6 +16,9 @@ export class ModelScene extends IDemo {
     arcCamera.alpha += Math.PI;
     arcCamera.setPosition(new Vector3(0, 0, 0.5));
 
+    // Both of SceneLoader.Append and SceneLoader.ImportMesh have the capability
+    // to load a model into the scene. The difference is when using SceneLoader.Append
+    // we need to query meshes through the scene.
     SceneLoader.Append("models/", "BoomBox.glb", this.scene_, function(scene) {
       let mesh = scene.getMeshByID("BoomBox");
       if (mesh) {
